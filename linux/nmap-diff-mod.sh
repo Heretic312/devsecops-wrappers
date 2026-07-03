@@ -6,7 +6,7 @@
 	#3.	Historical Tracking: Saves scan results to a log file for comparison.
 	#4.	Email Notifications: Sends alerts when differences are detected between scans.
 
-# Author -- heretic312
+# Author -- Heretic312
 
 # Configuration
 TARGET="192.168.1.0/24"  # Replace with your target network

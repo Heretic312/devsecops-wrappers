@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Author: Victor Bishop (heretic312)
+# Author: Victor Bishop (Heretic312)
 # Date: 7/25/2025
 # Auto SSH Key Generator 
 # Make script executable: chmod +x ssh-key-generator
