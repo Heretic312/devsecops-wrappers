@@ -2,7 +2,7 @@
 
 #Features
 	#1.	Custom Port List: Includes additional ports like Redis (6379, 6380) and others.
-	#2.	Banner Grabbing: Uses Nmap’s `banner.nse` script to capture service banners.
+	#2.	Banner Grabbing: Uses Nmap's `banner.nse` script to capture service banners.
 	#3.	Historical Tracking: Saves scan results to a log file for comparison.
 	#4.	Email Notifications: Sends alerts when differences are detected between scans.
 

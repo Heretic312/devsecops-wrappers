@@ -4,14 +4,7 @@
 # Simple script to check for insecure SNMP v1/v2c/v3 configs
 
 CONFIG="/etc/snmp/snmpd.conf"
-echo "
-
-▄▖▖ ▖▖  ▖▄▖  ▄▖   ▌▘▗ 
-▚ ▛▖▌▛▖▞▌▙▌  ▌▌▌▌▛▌▌▜▘
-▄▌▌▝▌▌▝ ▌▌   ▛▌▙▌▙▌▌▐▖
-                      
-
-"
+echo "=== SNMP Audit ==="
 
 # Check if snmpd is installed
 if ! command -v snmpd &>/dev/null; then

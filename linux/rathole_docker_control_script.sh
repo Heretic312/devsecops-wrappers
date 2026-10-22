@@ -22,7 +22,7 @@ if [[ "$ACTION" == "start" ]]; then
     if [ -f docker-compose.yml ]; then
       echo "[+] Starting Docker Compose stack..."
       docker-compose up -d
-      echo "[✓] Rathole (compose) started."
+      echo "[+] Rathole (compose) started."
     else
       echo "[!] docker-compose.yml not found."
       exit 1
@@ -40,7 +40,7 @@ if [[ "$ACTION" == "start" ]]; then
       --link rathole-server \
       rapiz1/rathole client /config.toml
 
-    echo "[✓] Rathole (manual) started."
+    echo "[+] Rathole (manual) started."
   else
     echo "[!] Invalid mode: $MODE"
     exit 1
@@ -51,7 +51,7 @@ elif [[ "$ACTION" == "stop" ]]; then
     if [ -f docker-compose.yml ]; then
       echo "[+] Stopping Docker Compose stack..."
       docker-compose down -v
-      echo "[✓] Rathole (compose) stopped."
+      echo "[+] Rathole (compose) stopped."
     else
       echo "[!] docker-compose.yml not found."
       exit 1
@@ -60,7 +60,7 @@ elif [[ "$ACTION" == "stop" ]]; then
     echo "[+] Stopping rathole-server and rathole-client..."
     docker stop rathole-server rathole-client 2>/dev/null || true
     docker rm rathole-server rathole-client 2>/dev/null || true
-    echo "[✓] Rathole (manual) stopped and removed."
+    echo "[+] Rathole (manual) stopped and removed."
   else
     echo "[!] Invalid mode: $MODE"
     exit 1
@@ -71,7 +71,7 @@ elif [[ "$ACTION" == "stop" ]]; then
   read -r CLEANUP
   if [[ "$CLEANUP" == "y" ]]; then
     docker system prune -f
-    echo "[✓] Docker system cleaned."
+    echo "[+] Docker system cleaned."
   else
     echo "[i] Skipping system prune."
   fi

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Author: Victor Bishop (Heretic313)
+# Author: Victor Bishop (Heretic312)
 # Date Created: 8/19/2025
 # Variables - customize these based on your setup
 LIGHTSAIL_INSTANCE_NAME="sliver-c2-instance"
